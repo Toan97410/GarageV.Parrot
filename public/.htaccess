@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
