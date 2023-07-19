@@ -1,4 +1,4 @@
-<?php require ROOT . "/resources/views/admin/layout/header.php"; ?>
+<?php require ROOT . "/resources/views/admin/templates/header.php"; ?>
 
 <div class="container mt-5 pt-5">
 
@@ -11,9 +11,9 @@
     endif; ?>
 
 <div class="text-center">
-<p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh" style="letter-spacing:1px;">AJOUTER UN UTILISATEUR</p>
+<p class="titresection" style="letter-spacing:1px;">AJOUTER UN UTILISATEUR</p>
     <div class="d-flex justify-content-center">
-        <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+        <div class="baton"></div>
     </div>
 
 </div>
@@ -48,9 +48,9 @@
 
 
 <div class="text-center">
-<p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh mt-5" style="letter-spacing:1px;">LISTE DES UTILISATEURS</p>
+<p class="titresection">LISTE DES UTILISATEURS</p>
     <div class="d-flex justify-content-center">
-        <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+        <div class="baton"></div>
     </div>
 </div>
 
@@ -80,4 +80,4 @@
 
 </div>
 
-<?php require ROOT . "/resources/views/layout/footer.php"; ?>
+<?php //require ROOT . "/resources/views/templates/footer.php"; ?>

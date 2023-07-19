@@ -54,4 +54,12 @@
       </nav>
     </div>
   </header>
+  <nav class="py-2 border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="/user" class="nav-link text-black px-2 active" aria-current="page">Gestion des utilisateurs</a></li>
+        <li class="nav-item"><a href="/car" class="nav-link text-black px-2">Gestion des voitures</a></li>
+      </ul>
+    </div>
+  </nav>
   <main>

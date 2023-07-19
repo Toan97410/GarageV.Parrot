@@ -1,4 +1,4 @@
-<?php require ROOT . "/resources/views/admin/layout/header.php"; ?>
+<?php require ROOT . "/resources/views/admin/templates/header.php"; ?>
 
 <div class="container mt-5 pt-5">
 
@@ -9,10 +9,10 @@
     <?php unset($_SESSION['message']);
     endif; ?>
 
-    <div class="text-center">
-        <p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh" style="letter-spacing:1px;">EDITER UN UTILISATEUR</p>
+    <div class="text-center container">
+        <p class="titresection">EDITER UN UTILISATEUR</p>
         <div class="d-flex justify-content-center">
-            <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+            <div class="baton"></div>
         </div>
 
     </div>
@@ -47,4 +47,4 @@
 
 </div>
 
-<?php require ROOT . "/resources/views/layout/footer-stickyBottom.php"; ?>
+<?php //require ROOT . "/resources/views/templates/footer-stickyBottom.php"; ?>

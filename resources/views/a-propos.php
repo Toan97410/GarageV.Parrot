@@ -79,9 +79,9 @@ require_once ROOT . "/resources/views/templates/header.php";
   <div class="border border-dark rounded mt-5 p-3">
     <p class="description">
       Depuis 2021, Garage V.Parrot propose une large gamme de services à ses clients :
-      Réparation de la carrosseie et de la mécanique des voitures ainsi que leur
+      Réparation de la carrosserie et de la mécanique des voitures ainsi que leur
       entretien régulier afin de garantir leur performance et leur sécurité.
-      Nous mettons en vente des véhicule d'occasion afin de proposé à notre clientèle
+      Nous mettons en vente des véhicules d'occasion afin de proposer à notre clientèle
       une multitude de services.
       Nous offrons à notre clientèle un service de qualité et personnalisé.
       Chez Garage V.Parrot, nous sommes votre partenaire de confiance pour tous vos besoins automobiles
@@ -97,15 +97,36 @@ require_once ROOT . "/resources/views/templates/header.php";
     <div class="baton"></div>
   </div>
 
-  <div class="border border-dark rounded mt-5 p-3 row contact">
-    <div class="col-4">
+  <div class="border border-dark rounded mt-5 p-3 row contact d-flex align-items-center row-cols-sm">
 
+    <div class="col-md-4">
+      <a href="#" class="icon-link icon-link-hover text-decoration-none text-white d-block">
+        <i><img src="image/phone-line.png" alt="phone"></i>
+        <p class="contact_contenu">
+          0123 45 67 89
+        </p>
+      </a>
     </div>
-    <div class="col-4">
-      <i class="bi bi-telephone text-white"></i>
 
+    <div class="col-md-4 map">
+      <a href="#" class="icon-link icon-link-hover text-decoration-none text-white d-block">
+        <i><img src="image/map-line.png" alt="adresse"></i>
+        <p class="contact_contenu map">
+          1 rue du Paradis,<br>
+          56000 Vannes
+        </p>
+      </a>
     </div>
-    <div class="col-4">
+
+    <div class="col-md-4">
+      <a href="#" class="icon-link icon-link-hover text-decoration-none text-white d-block">
+        <i><img src="image/mail-line.png" alt="mail"></i>
+        <p class="contact_contenu">
+          garagevparrot@parrot.com
+        </p>
+      </a>
+
+
 
     </div>
 

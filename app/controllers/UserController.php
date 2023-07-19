@@ -97,8 +97,6 @@ class UserController extends Controller{
             $this->redirect('/user', "Erreur lors de la suppression de l'utilisateur");
         }
     }
-
-
       
     public function logout() {
         $session = $this->sessionMiddleware->getSession();
