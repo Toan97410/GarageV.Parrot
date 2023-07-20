@@ -10,9 +10,9 @@
     endif; ?>
 
     <div class="text-center">
-        <p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh" style="letter-spacing:1px;">EDITER UN UTILISATEUR</p>
+        <p class="titresection">EDITER UN UTILISATEUR</p>
         <div class="d-flex justify-content-center">
-            <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+            <div class="baton"></div>
         </div>
 
     </div>

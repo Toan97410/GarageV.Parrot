@@ -24,21 +24,21 @@ class Commentaires extends Model {
         }
     }
 
-    public function create($username, $contenu_commentaire) {
-      $sql = "INSERT INTO commentaire (username, contenu_commentaire) VALUES (?, ?)";
+    public function create($nom, $commentaire) {
+      $sql = "INSERT INTO commentaire (nom, commentaire) VALUES (?, ?)";
       try {
           $stmt = $this->database->connect()->prepare($sql);
-          $stmt->execute([$username, $contenu_commentaire]);
+          $stmt->execute([$nom, $commentaire]);
       } catch(PDOException $e) {
           throw new Exception('Erreur : ' . $e->getMessage());
       }
   }
   
-  public function update($id, $username, $contenu_commentaire) {
-    $sql = "UPDATE commentaire SET username = ?, contenu_commentaire = ? WHERE id = ?";
+  public function update($id, $nom, $commentaire) {
+    $sql = "UPDATE commentaire SET nom = ?, commentaire = ? WHERE id = ?";
     try {
         $stmt = $this->database->connect()->prepare($sql);
-        $stmt->execute([$username, $contenu_commentaire, $id]);
+        $stmt->execute([$nom, $commentaire, $id]);
     } catch(PDOException $e) {
         throw new Exception('Erreur : ' . $e->getMessage());
     }

@@ -42,7 +42,7 @@ class Router {
         if (!$callback) {
             $controllerName = $this->controllerNamespace . $this->defaultController;
             $method = $this->defaultAction;
-            $controller = new $controllerName($this, $this->middlewares); // instanciation du contrôleur avec les middlewares
+            $controller = new $controllerName($this, $this->middlewares);
             echo $controller->$method();
             return;
         }
@@ -56,7 +56,7 @@ class Router {
                 $middleware->handle();
             }
             $controllerName = $this->controllerNamespace . $callback[0];
-            $controller = new $controllerName($this, $this->middlewares); // instanciation du contrôleur les middlewares
+            $controller = new $controllerName($this, $this->middlewares);
             $method = $callback[1];
             $params = array_slice($matches, 1);
             echo $controller->$method($params);

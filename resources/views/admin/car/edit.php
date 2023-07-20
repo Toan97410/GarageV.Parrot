@@ -10,9 +10,9 @@
     endif; ?>
 
     <div class="text-center">
-        <p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh" style="letter-spacing:1px;">EDITER UNE VOITURE</p>
+        <p class="titresection">EDITER UNE VOITURE</p>
         <div class="d-flex justify-content-center">
-            <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+            <div class="baton"></div>
         </div>
 
     </div>
@@ -106,9 +106,12 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-outline-secondary" style="border: 0; padding: 10px; border-radius: 5px;">Ajouter une image</button>
-
-        <button type="submit" class="btn btn-outline-secondary" style="border: 0; padding: 10px; border-radius: 5px;">Editer une voiture</button>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" id="image">
+            <input type="submit" value="Ajouter une image">
+        </form>
+        
+        <button type="submit" class="btn btn-outline-secondary">Editer une voiture</button>
     </form>
 </div>
 

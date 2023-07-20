@@ -10,9 +10,9 @@
     endif; ?>
 
     <div class="text-center">
-        <p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh" style="letter-spacing:1px;">AJOUTER UNE VOITURE</p>
+        <p class="titresection">AJOUTER UNE VOITURE</p>
         <div class="d-flex justify-content-center">
-            <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+            <div class="baton"></div>
         </div>
 
     </div>
@@ -105,16 +105,15 @@
             Veuillez entrer une couleur.
         </div>
     </div>
-    <button type="image" class="btn btn-outline-secondary">Ajouter une image</button>
 
     <button type="submit" class="btn btn-outline-secondary">Ajouter une voiture</button>
 </form>
 
 
-    <div class="text-center">
-        <p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh mt-5" style="letter-spacing:1px;">LISTE DES VOITURES</p>
+    <div class="text-center mt-5">
+        <p class="titresection">LISTE DES VOITURES</p>
         <div class="d-flex justify-content-center">
-            <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+            <div class="baton"></div>
         </div>
     </div>
 
@@ -122,14 +121,10 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <!-- Note: Change these to correspond to your Car model -->
                 <th scope="col">Modèle</th>
                 <th scope="col">Marque</th>
                 <th scope="col">Année</th>
-
                 <th scope="col">Kilométrage</th>
-
-                <!-- other headers for car (brand, year, price, etc.) -->
                 <th scope="col">Editer</th>
                 <th scope="col">Supprimer</th>
             </tr>
@@ -142,7 +137,6 @@
                     <td><?= $car['marque']; ?></td>
                     <td><?= $car['annee_du_vehicule']; ?></td>
                     <td><?= $car['kilometrage']; ?></td>
-                    <!-- other car fields -->
                     <td><a href="/car/edit/<?= $car['id'] ?>">Editer</a></td>
                     <td><a class="gv-color" href="/car/delete/<?= $car['id'] ?>">Supprimer</a></td>
                 </tr>

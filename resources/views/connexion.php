@@ -4,9 +4,9 @@ require_once ROOT . "/resources/views/templates/header.php";
 
 ?>
 
-<section class="container justify-content-center align-items-center d-flex hauteur">
+<section class="container justify-content-center align-items-center d-flex">
   <div class="mt-5 pt-5 text-center">
-    <p class="titresection" style="letter-spacing:1px;">CONNEXION</p>
+    <p class="titresection">CONNEXION</p>
     <div class="d-flex justify-content-center">
       <div class="baton"></div>
     </div>

@@ -6,6 +6,8 @@ use App\Models\Car;
 use App\Services\Auth;
 use App\Services\Config;
 use Database\Database;
+use App\Models\Image;
+
 
 class CarController extends Controller{
 

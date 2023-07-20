@@ -47,4 +47,4 @@
 
 </div>
 
-<?php //require ROOT . "/resources/views/templates/footer-stickyBottom.php"; ?>
+<?php require ROOT . "/resources/views/templates/footer.php"; ?>

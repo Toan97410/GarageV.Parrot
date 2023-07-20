@@ -106,9 +106,12 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-outline-secondary" style="border: 0; padding: 10px; border-radius: 5px;">Ajouter une image</button>
-
-        <button type="submit" class="btn btn-outline-secondary" style="border: 0; padding: 10px; border-radius: 5px;">Editer une voiture</button>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" id="image">
+            <input type="submit" value="Ajouter une image">
+        </form>
+        
+        <button type="submit" class="btn btn-outline-secondary">Editer une voiture</button>
     </form>
 </div>
 

@@ -10,111 +10,109 @@
     endif; ?>
 
     <div class="text-center">
-        <p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh" style="letter-spacing:1px;">AJOUTER UNE VOITURE</p>
+        <p class="titresection">AJOUTER UNE VOITURE</p>
         <div class="d-flex justify-content-center">
-            <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+            <div class="baton"></div>
         </div>
 
     </div>
 
     <form class="mt-5" action="/car" method="POST" class="needs-validation" novalidate>
-    <div class="mb-3">
-        <label for="marque" class="form-label">Marque</label>
-        <input type="text" class="form-control" id="marque" name="marque" required>
-        <div class="invalid-feedback">
-            Veuillez entrer une marque.
+        <div class="mb-3">
+            <label for="marque" class="form-label">Marque</label>
+            <input type="text" class="form-control" id="marque" name="marque" required>
+            <div class="invalid-feedback">
+                Veuillez entrer une marque.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="modele" class="form-label">Modèle</label>
-        <input type="text" class="form-control" id="modele" name="modele" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un modèle.
+        <div class="mb-3">
+            <label for="modele" class="form-label">Modèle</label>
+            <input type="text" class="form-control" id="modele" name="modele" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un modèle.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="annee_du_vehicule" class="form-label">Année</label>
-        <input type="number" class="form-control" id="annee_du_vehicule" name="annee_du_vehicule" min="1885" max="2099" required>
-        <div class="invalid-feedback">
-            Veuillez entrer une année valide.
+        <div class="mb-3">
+            <label for="annee_du_vehicule" class="form-label">Année</label>
+            <input type="number" class="form-control" id="annee_du_vehicule" name="annee_du_vehicule" min="1885" max="2099" required>
+            <div class="invalid-feedback">
+                Veuillez entrer une année valide.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="prix" class="form-label">Prix</label>
-        <input type="number" class="form-control" id="prix" name="prix" min="0" step="0.01" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un prix valide.
+        <div class="mb-3">
+            <label for="prix" class="form-label">Prix</label>
+            <input type="number" class="form-control" id="prix" name="prix" min="0" step="0.01" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un prix valide.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="kilometrage" class="form-label">Kilométrage</label>
-        <input type="number" class="form-control" id="kilometrage" name="kilometrage" min="0" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un kilométrage valide.
+        <div class="mb-3">
+            <label for="kilometrage" class="form-label">Kilométrage</label>
+            <input type="number" class="form-control" id="kilometrage" name="kilometrage" min="0" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un kilométrage valide.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="carburant" class="form-label">Carburant</label>
-        <input type="text" class="form-control" id="carburant" name="carburant" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un type de carburant.
+        <div class="mb-3">
+            <label for="carburant" class="form-label">Carburant</label>
+            <input type="text" class="form-control" id="carburant" name="carburant" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un type de carburant.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="boite_de_vitesse" class="form-label">Boîte de vitesse</label>
-        <input type="text" class="form-control" id="boite_de_vitesse" name="boite_de_vitesse" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un type de boîte de vitesse.
+        <div class="mb-3">
+            <label for="boite_de_vitesse" class="form-label">Boîte de vitesse</label>
+            <input type="text" class="form-control" id="boite_de_vitesse" name="boite_de_vitesse" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un type de boîte de vitesse.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="chevaux_fiscaux" class="form-label">Chevaux fiscaux</label>
-        <input type="number" class="form-control" id="chevaux_fiscaux" name="chevaux_fiscaux" min="0" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un nombre de chevaux fiscaux.
+        <div class="mb-3">
+            <label for="chevaux_fiscaux" class="form-label">Chevaux fiscaux</label>
+            <input type="number" class="form-control" id="chevaux_fiscaux" name="chevaux_fiscaux" min="0" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un nombre de chevaux fiscaux.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="nombre_de_place" class="form-label">Nombre de places</label>
-        <input type="number" class="form-control" id="nombre_de_place" name="nombre_de_place" min="1" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un nombre de places.
+        <div class="mb-3">
+            <label for="nombre_de_place" class="form-label">Nombre de places</label>
+            <input type="number" class="form-control" id="nombre_de_place" name="nombre_de_place" min="1" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un nombre de places.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="nombre_de_porte" class="form-label">Nombre de portes</label>
-        <input type="number" class="form-control" id="nombre_de_porte" name="nombre_de_porte" min="1" required>
-        <div class="invalid-feedback">
-            Veuillez entrer un nombre de portes.
+        <div class="mb-3">
+            <label for="nombre_de_porte" class="form-label">Nombre de portes</label>
+            <input type="number" class="form-control" id="nombre_de_porte" name="nombre_de_porte" min="1" required>
+            <div class="invalid-feedback">
+                Veuillez entrer un nombre de portes.
+            </div>
         </div>
-    </div>
 
-    <div class="mb-3">
-        <label for="couleur" class="form-label">Couleur</label>
-        <input type="text" class="form-control" id="couleur" name="couleur" required>
-        <div class="invalid-feedback">
-            Veuillez entrer une couleur.
+        <div class="mb-3">
+            <label for="couleur" class="form-label">Couleur</label>
+            <input type="text" class="form-control" id="couleur" name="couleur" required>
+            <div class="invalid-feedback">
+                Veuillez entrer une couleur.
+            </div>
         </div>
-    </div>
-    <button type="image" class="btn btn-outline-secondary">Ajouter une image</button>
-
-    <button type="submit" class="btn btn-outline-secondary">Ajouter une voiture</button>
-</form>
+        <button type="submit" class="btn btn-outline-secondary">Ajouter une voiture</button>
+    </form>
 
 
-    <div class="text-center">
-        <p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh mt-5" style="letter-spacing:1px;">LISTE DES VOITURES</p>
+    <div class="text-center mt-5">
+        <p class="titresection">LISTE DES VOITURES</p>
         <div class="d-flex justify-content-center">
-            <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+            <div class="baton"></div>
         </div>
     </div>
 
@@ -122,14 +120,10 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <!-- Note: Change these to correspond to your Car model -->
                 <th scope="col">Modèle</th>
                 <th scope="col">Marque</th>
                 <th scope="col">Année</th>
-
                 <th scope="col">Kilométrage</th>
-
-                <!-- other headers for car (brand, year, price, etc.) -->
                 <th scope="col">Editer</th>
                 <th scope="col">Supprimer</th>
             </tr>

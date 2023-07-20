@@ -11,7 +11,7 @@
     endif; ?>
 
 <div class="text-center">
-<p class="titresection" style="letter-spacing:1px;">AJOUTER UN UTILISATEUR</p>
+<p class="titresection">AJOUTER UN UTILISATEUR</p>
     <div class="d-flex justify-content-center">
         <div class="baton"></div>
     </div>
@@ -80,4 +80,4 @@
 
 </div>
 
-<?php //require ROOT . "/resources/views/templates/footer.php"; ?>
+<?php require ROOT . "/resources/views/templates/footer.php"; ?>

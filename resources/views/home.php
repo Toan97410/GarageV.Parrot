@@ -32,10 +32,10 @@ $vehicles = [
     </div>
 
     <div class="row mt-5 pt-5">
-      <?php foreach ($vehicles as $vehicle) : ?>
+      <?php foreach ($cars as $car) : ?>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <img class="card-img-top" style="max-height: 240px;" src="<?php echo $vehicle['image']; ?>" alt="<?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?>">
+            <img class="card-img-top" style="max-height: 240px;" src="" alt="<?= $car['marque'] . ' ' . $car['modele']; ?>">
             <div class="card-body">
               <h5 class="card-title"><?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?></h5>
             </div>

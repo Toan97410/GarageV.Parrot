@@ -11,9 +11,9 @@
     endif; ?>
 
 <div class="text-center">
-<p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh" style="letter-spacing:1px;">AJOUTER UN UTILISATEUR</p>
+<p class="titresection">AJOUTER UN UTILISATEUR</p>
     <div class="d-flex justify-content-center">
-        <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+        <div class="baton"></div>
     </div>
 
 </div>
@@ -48,9 +48,9 @@
 
 
 <div class="text-center">
-<p class="gv-fs-80 gv-fw-700 text-black gv-margin gv-lh mt-5" style="letter-spacing:1px;">LISTE DES UTILISATEURS</p>
+<p class="titresection">LISTE DES UTILISATEURS</p>
     <div class="d-flex justify-content-center">
-        <div style="margin-top:45px; width: 96px; height: 8px; background-color: rgba(207,26,26,1);"></div>
+        <div class="baton"></div>
     </div>
 </div>
 

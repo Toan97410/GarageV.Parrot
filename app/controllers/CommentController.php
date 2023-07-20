@@ -21,21 +21,27 @@ class CommentController extends Controller{
         $this->renderView('commentaires');
     }
 
-    public function addCar() {
+    public function addCommentaires() {
         $username = $_POST['username'];
-        $contenu_commentaire = $_POST['contenu_commentaire'];
+        $contenu_commentaire = $_POST['message'];
 
         $CommentairesModel = new Commentaires($this->database);
         $CommentairesModel->create($username, $contenu_commentaire);
-        $this->redirect('/car', "La voiture a bien été ajoutée.");
+        $this->redirect('/commentaires', "le commentaire à bien été envoyé");
     }
     public function edit($params) {
-        $username = $_POST['username'];
-        $contenu_commentaire = $_POST['username'];
+        $nom = $_POST['username'];
+        $commentaire = $_POST['message'];
         $id = $params['id'];
         $CommentairesModel = new Commentaires($this->database);
-        $CommentairesModel->update($id, $username, $contenu_commentaire);
-        $this->redirect('/commentaires', "La voiture a été mise à jour avec succès.");
+        $CommentairesModel->update($id, $nom, $commentaire);
+        $this->redirect('/commentaires', "le commentaire à bien été envoyé");
     }
 
+    public function showEditForm($params) {
+        $id = $params['id'];
+        $CommentairesModel = new Commentaires($this->database);
+        $commentaire = $CommentairesModel->findById($id);
+        $this->renderView('/commentaires', ['commentaires' => $commentaire]);
+    }
 }

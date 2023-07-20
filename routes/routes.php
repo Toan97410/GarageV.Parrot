@@ -24,9 +24,9 @@ $router->get('/user/delete/{id}', 'UserController@delete');
 $router->get('/car', 'CarController@index');
 $router->post('/car', 'CarController@addCar');
 
-$router->get('/car/edit/{id}', 'UserController@showEditForm');
-$router->post('/car/edit/{id}', 'UserController@edit');
-$router->get('/car/delete/{id}', 'UserController@delete');
+$router->get('/car/edit/{id}', 'CarController@showEditForm');
+$router->post('/car/edit/{id}', 'CarController@edit');
+$router->get('/car/delete/{id}', 'CarController@delete');
 
 $router->get('/admin', 'UserController@index');
 
