@@ -18,15 +18,18 @@ class CommentController extends Controller{
     }
 
     public function index() {
-        $this->renderView('commentaires');
+        $commentaireModel = new Commentaires($this->database);
+        $commentaires = $commentaireModel->getAll();
+        extract(compact('commentaires'));
+        $this->renderView('commentaires', ['commentaires' => $commentaires]);
     }
 
     public function addCommentaires() {
-        $username = $_POST['username'];
-        $contenu_commentaire = $_POST['message'];
+        $nom = $_POST['username'];
+        $commentaires = $_POST['message'];
 
         $CommentairesModel = new Commentaires($this->database);
-        $CommentairesModel->create($username, $contenu_commentaire);
+        $CommentairesModel->create($nom, $commentaires);
         $this->redirect('/commentaires', "le commentaire à bien été envoyé");
     }
     public function edit($params) {

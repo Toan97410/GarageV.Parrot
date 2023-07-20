@@ -12,8 +12,12 @@ require_once ROOT . "/resources/views/templates/header.php";
     </div>
     <div class="row mt-5 pt-5 d-flex">
 
-      <?php foreach ($cars as $car) : ?>
-        <div class="col-lg-4 mb-4">
+      <?php
+      usort($cars, function($a, $b) {
+        return strtotime($b['updated_at']) - strtotime($a['updated_at']);
+      });
+      foreach ($cars as $car) : ?>
+        <div class="col-lg-4 col-sm-6 mb-4">
           <div class="card">
             <img src="..." alt="<?= $car['marque'] . ' ' . $car['modele']; ?>" style="max-height: 240px;" class="card-img-top" alt="Photo">
             <div class="card-body">

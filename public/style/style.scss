@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-footer{
+footer {
   position: absolute;
   margin-bottom: 0;
   width: 100%;
@@ -88,7 +88,7 @@ label {
   border-left: #f2f2f2 1px solid;
 }
 
-.map> a > p {
+.map>a>p {
   border: none;
 }
 
@@ -102,6 +102,74 @@ label {
 }
 
 //RESPONSIVE
+
+@media screen and (max-width:1400px) {
+
+  .s_titresection {
+    font-size: 25px;
+    font-weight: 600;
+    color: #bababa;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .titresection {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 70px;
+  }
+
+  .gv-brand {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .gv-brand-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 380px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+
+  .s_titresection {
+    font-size: 20px;
+    font-weight: 600;
+    color: #bababa;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .titresection {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 60px;
+  }
+
+  .gv-brand {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .gv-brand-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 280px;
+  }
+}
 
 @media screen and (max-width:992px) {
 
@@ -119,17 +187,31 @@ label {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1;
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .gv-brand {
     position: relative;
-    background-color: #262526;
-    height: 800px;
+    height: 500px;
     width: 100%;
     background-size: cover;
   }
 
+  .gv-brand-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 320px;
+  }
+
+  .gv-brand::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    background-color: rgba(38, 37, 38, 0.8);
+    height: 250px;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -153,8 +235,7 @@ label {
 
   .gv-brand {
     position: relative;
-    background-color: #262526;
-    height: 800px;
+    height: 400px;
     width: 100%;
     background-size: cover;
   }
@@ -166,8 +247,51 @@ label {
     border-left: none;
   }
 
-  .map> a > p {
+  .map>a>p {
     border: none;
+  }
+
+  .gv-brand-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 250px;
+  }
+
+  .gv-brand::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    background-color: rgba(38, 37, 38, 0.8);
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .gv-brand {
+    position: relative;
+    background-color: #262526;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-image: none;
+  }
+
+  .gv-brand-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .gv-brand::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    background-color: none;
+    height: 0;
   }
 }
 
