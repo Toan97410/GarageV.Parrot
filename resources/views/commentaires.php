@@ -34,12 +34,12 @@ require_once ROOT . "/resources/views/templates/header.php";
 
   <!-- FORMULAIRE D'ENVOI COMMENTAIRE -->
 
-  <form class="commentaire mt-5 mx-auto">
+  <form class="mt-5 mx-auto commentaire" action="/commentaires" method="POST" class="needs-validation" novalidate>
     <label for="username" class="form-label">Expéditeur</label>
     <input type="text" class="form-control" id="username" name="username">
     <label for="message">Message</label>
     <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-    <button class="btn btn-sm btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#contactModal" type="submit">
+    <button class="btn btn-sm btn-secondary mt-3" type="submit">
       Laisser un avis
     </button>
   </form>

@@ -28,6 +28,9 @@ $router->get('/car/edit/{id}', 'CarController@showEditForm');
 $router->post('/car/edit/{id}', 'CarController@edit');
 $router->get('/car/delete/{id}', 'CarController@delete');
 
+$router->get('/commentaires', 'CommentController@index');
+$router->post('/commentaire', 'CommentController@addCommentaires');
+
 $router->get('/admin', 'UserController@index');
 
 return $router;
